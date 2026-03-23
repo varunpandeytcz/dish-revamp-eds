@@ -1,0 +1,671 @@
+.instant-recharge-cust-info {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.instant-recharge-cust-info .recharge-container {
+  display: flex !important;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+  padding: 40px 0 20px;
+}
+
+.instant-recharge-cust-info .custom-select-mobile {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 35px;
+}
+
+@media only screen and (max-width: 649px) {
+  .instant-recharge-cust-info .custom-select-mobile {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 4px;
+  }
+}
+
+.instant-recharge-cust-info .card-below-input {
+  padding-top: 30px;
+  display: none;
+  align-items: center;
+  width: 90% !important;
+  margin: 0 auto;
+  background: #f5f5f5;
+}
+
+.instant-recharge-cust-info .recharge-component-first .active {
+  border-radius: 2px;
+  text-align: center;
+  padding: 2px 12px;
+  background: #bfede4;
+  color: #4cc0ab;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  position: absolute;
+  top: -30px;
+  left: 0;
+}
+
+@media screen and (max-width: 650px) {
+  .instant-recharge-cust-info .recharge-component-first .active {
+    right: 0;
+    left: unset;
+  }
+}
+
+@media (min-width: 831px) and (max-width: 1040px) {
+  .instant-recharge-cust-info .recharge-container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .instant-recharge-cust-info .recharge-container {
+    display: block !important;
+    width: 90%;
+    padding: 10px 0;
+  }
+
+  .instant-recharge-cust-info .card-below-input {
+    padding-inline: 25px;
+    padding-top: 40px;
+    padding-bottom: 24px;
+    width: 90% !important;
+  }
+
+  .instant-recharge-cust-info .form-card img {
+    max-width: 94px;
+    max-height: 30px;
+  }
+
+  .instant-recharge-cust-info .amount-card {
+    margin-top: 16px;
+  }
+}
+
+.instant-recharge-cust-info .main-heading {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0.44px;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 649px) {
+  .instant-recharge-cust-info .main-heading {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+.instant-recharge-cust-info .select-mobile {
+  width: 232px;
+  border: 1px solid #f04c23;
+  height: 35px;
+  appearance: none;
+  padding-left: 10px;
+  border-radius: 30px;
+  color: #0f194a;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.dishtv-zing-user .instant-recharge-cust-info .select-mobile {
+  border: 1px solid #224898;
+}
+
+.instant-recharge-cust-info .custom-select-mobile-container {
+  position: relative;
+}
+
+.instant-recharge-cust-info .custom-select-mobile-container::after {
+  content: "\276F";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  right: 10px;
+  top: 50%;
+  pointer-events: none;
+  transform: rotate(90deg) translateX(-50%);
+  color: #fff;
+  background: #f04c23;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  border-radius: 50%;
+}
+
+.dishtv-zing-user .instant-recharge-cust-info .custom-select-mobile-container::after {
+  background: #224898;
+}
+
+.instant-recharge-cust-info .custom-select {
+  position: relative;
+}
+
+.instant-recharge-cust-info .profile-icon {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  width: 17px;
+  height: 17px;
+  transform: translateY(-50%);
+}
+
+.instant-recharge-cust-info .details-card-mobile {
+  display: flex;
+  padding: 0;
+  border-radius: 5px;
+  position: relative;
+}
+
+.instant-recharge-cust-info .details-row-mobile {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.instant-recharge-cust-info .each-details-mobile {
+  display: flex;
+}
+
+.instant-recharge-cust-info .amount-image {
+  margin-top: 0;
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+}
+
+.instant-recharge-cust-info .monthly-recharge-container {
+  position: relative;
+  display: flex;
+}
+
+.instant-recharge-cust-info .monthly-recharge-text {
+  display: none;
+  width: 190px;
+  background-color: #202020;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  font-size: 14px;
+  transition: display 0.3s;
+}
+
+.instant-recharge-cust-info .monthly-recharge-text a {
+  color: #f04c23 !important;
+}
+
+@media (min-width: 660px) and (max-width: 1040px) {
+  .instant-recharge-cust-info .details-row-mobile {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .instant-recharge-cust-info .each-details-mobile {
+    border-right: 0;
+  }
+}
+
+.instant-recharge-cust-info .each-details-mobile:last-child {
+  border: 0;
+}
+
+.instant-recharge-cust-info .recharge-component {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.instant-recharge-cust-info .recharge-component-middle {
+  border-left: 1.5px solid #f04c23;
+  border-right: 1.5px solid #f04c23;
+}
+
+.dishtv-zing-user .instant-recharge-cust-info .recharge-component-middle {
+  border-left: 1.5px solid #224898;
+  border-right: 1.5px solid #224898;
+}
+
+.instant-recharge-cust-info .recharge-component-first {
+  padding-left: 0 !important;
+}
+
+.instant-recharge-cust-info .recharge-component-first h4 {
+  display: flex;
+}
+
+@media screen and (max-width: 650px) {
+  .instant-recharge-cust-info .recharge-component-first h4 {
+    flex-direction: column;
+  }
+
+  .dishtv-zing-user .instant-recharge-cust-info .recharge-component-middle {
+    border: 0;
+  }
+}
+
+.instant-recharge-cust-info .recharge-component-last {
+  padding-right: 7px;
+}
+
+@media (min-width: 660px) and (max-width: 1040px) {
+  .instant-recharge-cust-info .recharge-component {
+    width: auto;
+  }
+}
+
+.instant-recharge-cust-info .each-details-mobile h4 {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: unset;
+  color: #0f194a;
+  opacity: 0.6;
+}
+
+.instant-recharge-cust-info .each-details-mobile p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: unset;
+  color: #0f194a;
+  opacity: 0.6;
+}
+
+@media (min-width: 650px) and (max-width: 1024px) {
+  .instant-recharge-cust-info .each-details-mobile h4 {
+    font-size: 15px;
+  }
+
+  .instant-recharge-cust-info .each-details-mobile p {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 649px) {
+  .instant-recharge-cust-info .details-card-mobile {
+    width: 100%;
+    margin-left: 0;
+    flex-direction: column;
+  }
+
+  .instant-recharge-cust-info .custom-select-mobile-container {
+    width: auto;
+  }
+
+  .instant-recharge-cust-info .custom-select-mobile-container::after {
+    top: 52%;
+  }
+
+  .instant-recharge-cust-info .select-mobile {
+    width: auto;
+    height: auto !important;
+    font-size: 14px;
+    border: 0;
+    padding-left: 0;
+    background: transparent !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    font-weight: 600;
+  }
+
+  .instant-recharge-cust-info .details-row-mobile {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+  }
+
+  .instant-recharge-cust-info .each-details-mobile h4 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-transform: uppercase;
+  }
+
+  .instant-recharge-cust-info .each-details-mobile p {
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    opacity: 1;
+  }
+
+  .instant-recharge-cust-info .profile-icon {
+    position: relative;
+    top: 32px;
+    left: 15px;
+    width: 17px;
+    height: 17px;
+  }
+
+  .instant-recharge-cust-info .each-details-mobile {
+    border: 0;
+    margin-bottom: 0;
+    background: rgb(230 230 230 / 50%);
+    border-radius: 8px;
+  }
+
+  .instant-recharge-cust-info .recharge-component-middle {
+    border: 0;
+  }
+}
+
+@media only screen and (max-width: 649px) {
+  .instant-recharge-cust-info select {
+    padding: 13px 4em 15px 3.2em;
+    height: 45px;
+  }
+
+  .instant-recharge-cust-info .recharge-component {
+    padding: 10px 18px 10px 10px !important;
+  }
+}
+
+@media only screen and (max-width: 649px) {
+  .instant-recharge-cust-info .select-none {
+    display: block;
+  }
+}
+
+.instant-recharge-cust-info .userNameIR-container {
+  padding-bottom: 6px;
+}
+
+.instant-recharge-cust-info .userNameIR-container,
+.instant-recharge-cust-info .userRMNir-container {
+  display: flex;
+  align-items: center;
+}
+
+.instant-recharge-cust-info .userNameIR-label {
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  opacity: 1;
+}
+
+.instant-recharge-cust-info .userRMNir-label {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+  opacity: 1;
+}
+
+@media (max-width: 650px) {
+  .instant-recharge-cust-info .userRMNir-label {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+
+.instant-recharge-cust-info .userNameIR {
+  color: #f04c23;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-left: 12px;
+}
+
+.dishtv-zing-user .instant-recharge-cust-info .userNameIR {
+  color: #224898;
+}
+
+.instant-recharge-cust-info .userRMNir {
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20.8px;
+  margin-left: 12px;
+}
+
+@media (max-width: 650px) {
+  .instant-recharge-cust-info .userRMNir {
+    font-size: 14px;
+  }
+}
+
+.instant-recharge-cust-info .showless-button {
+  display: none;
+}
+
+@media only screen and (max-width: 649px) {
+  .instant-recharge-cust-info .userNameIR,
+  .instant-recharge-cust-info .userNameIR-label {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+
+  .instant-recharge-cust-info .showless-button {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+    border: 0;
+    background: transparent;
+    position: relative;
+    color: #f04c23;
+    text-align: left;
+  }
+
+  .instant-recharge-cust-info .arrow {
+    content: "";
+    position: absolute;
+    margin-left: 16px;
+    top: 4px;
+    box-sizing: border-box;
+    height: 10px;
+    width: 10px;
+    border-style: solid;
+    border-color: #f04c23;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    pointer-events: none;
+  }
+
+  .instant-recharge-cust-info .up-arrow {
+    transform: rotate(225deg);
+    margin-top: 5px;
+  }
+
+  .instant-recharge-cust-info .amount-image {
+    margin-top: 0;
+  }
+
+  .instant-recharge-cust-info .monthly-recharge-container {
+    position: relative;
+    display: block;
+    right: 5px;
+  }
+
+  .instant-recharge-cust-info .link {
+    text-decoration: underline;
+  }
+
+  .instant-recharge-cust-info .monthly-recharge-text {
+    width: 200px;
+    background-color: rgb(32 32 32 / 80%);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    left: unset;
+    right: 5%;
+    font-size: 14px;
+    transition: display 0.3s;
+  }
+}
+
+.instant-recharge-cust-info .custom-select-mobile-container.hide-icon {
+  pointer-events: none;
+}
+
+.instant-recharge-cust-info .custom-select-mobile-container.hide-icon .select-mobile {
+  text-align: center;
+  padding-left: 0;
+}
+
+@media screen and (max-width: 650px) {
+  .instant-recharge-cust-info .custom-select-mobile-container.hide-icon .select-mobile {
+    text-align: left;
+  }
+}
+
+.instant-recharge-cust-info .custom-select-mobile-container.hide-icon::after {
+  display: none;
+}
+
+/* Final desktop tuning to match approved UI screenshot */
+.instant-recharge-cust-info {
+  background: #fff;
+}
+
+.instant-recharge-cust-info .recharge-container {
+  width: 92%;
+  margin: 0 auto;
+  padding: 28px 0 10px;
+}
+
+.instant-recharge-cust-info .custom-select-mobile {
+  align-items: flex-start;
+  padding-bottom: 18px;
+}
+
+.instant-recharge-cust-info .userDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.instant-recharge-cust-info .userNameIR-container,
+.instant-recharge-cust-info .userRMNir-container {
+  gap: 8px;
+}
+
+.instant-recharge-cust-info .userNameIR-label,
+.instant-recharge-cust-info .userNameIR {
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+.instant-recharge-cust-info .userRMNir-label,
+.instant-recharge-cust-info .userRMNir {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.instant-recharge-cust-info .active {
+  width: fit-content;
+  padding: 3px 10px;
+  border-radius: 2px;
+  margin-top: 4px;
+  background: #bfede4;
+  color: #4cc0ab;
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  position: static !important;
+}
+
+.instant-recharge-cust-info .custom-select-mobile-container.hide-icon {
+  pointer-events: auto;
+}
+
+.instant-recharge-cust-info .select-mobile {
+  min-width: 190px;
+  height: 36px;
+  padding: 0 20px;
+  border: 1px solid #6f8dcf;
+  border-radius: 20px;
+  font-size: 19px;
+  font-weight: 700;
+  text-align: center;
+  color: #12307e;
+  background: #fff;
+}
+
+.instant-recharge-cust-info .details-card-mobile {
+  width: 100%;
+}
+
+.instant-recharge-cust-info .details-row-mobile {
+  justify-content: flex-start;
+  gap: 0;
+}
+
+.instant-recharge-cust-info .each-details-mobile {
+  align-items: center;
+}
+
+.instant-recharge-cust-info .recharge-component {
+  padding: 0 16px;
+}
+
+.instant-recharge-cust-info .recharge-component-first {
+  padding-left: 0 !important;
+}
+
+.instant-recharge-cust-info .recharge-component-middle {
+  border-left: 1px solid #7f8eb4;
+  border-right: 1px solid #7f8eb4;
+}
+
+.instant-recharge-cust-info .each-details-mobile h4 {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  color: #6f7890;
+  opacity: 1;
+}
+
+.instant-recharge-cust-info .each-details-mobile p {
+  margin: 2px 0 0;
+  font-size: 30px;
+  line-height: 34px;
+  font-weight: 700;
+  color: #0f194a;
+  opacity: 1;
+}
+
+.instant-recharge-cust-info .monthly-recharge-container {
+  margin-left: 6px;
+}
+
+@media only screen and (max-width: 900px) {
+  .instant-recharge-cust-info .userNameIR-label,
+  .instant-recharge-cust-info .userNameIR {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .instant-recharge-cust-info .userRMNir-label,
+  .instant-recharge-cust-info .userRMNir {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .instant-recharge-cust-info .each-details-mobile p {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}

@@ -1,0 +1,44 @@
+.instant-recharge-header {
+  position: relative;
+  background: #fff;
+}
+
+.instant-recharge-header .instant-recharge-header-div {
+  width: 100%;
+  min-height: 64px;
+  margin: 0 auto;
+  padding: 18px 20px 14px;
+  display: flex;
+  align-items: center;
+}
+
+.instant-recharge-header .instant-recharge-header-div > div {
+  display: flex;
+  align-items: center;
+}
+
+.instant-recharge-header picture,
+.instant-recharge-header img {
+  display: block;
+}
+
+.instant-recharge-header img {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 649px) {
+  .instant-recharge-header .instant-recharge-header-div {
+    min-height: 56px;
+    padding: 14px 16px 12px;
+  }
+
+  .instant-recharge-header img {
+    width: 74px;
+  }
+
+  .instant-recharge-header::after {
+    height: 36px;
+  }
+}
