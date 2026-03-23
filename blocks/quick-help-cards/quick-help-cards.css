@@ -44,7 +44,7 @@
 
 .quick-help-cards .quickhelp-card .quickhelp-card-pretext {
   color: #e4e4e4;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   opacity: 0.6;
   padding-top: 12px;
@@ -109,6 +109,54 @@
 .quick-help-cards .quickhelp-card .button-wrapper .button:hover,
 .quick-help-cards .quickhelp-card .quickhelp-card-btn.button:hover {
   background: #ff6a3e;
+}
+
+@media (max-width: 599px) {
+  .quick-help-cards-container {
+    padding: 28px 0 72px;
+  }
+
+  .quick-help-cards {
+    gap: 20px;
+  }
+
+  .quick-help-cards .quickhelp-row {
+    gap: 16px;
+  }
+
+  .quick-help-cards .quickhelp-card {
+    border-radius: 8px;
+    padding: 18px;
+    min-height: 300px;
+  }
+
+  .quick-help-cards .quickhelp-card .quickhelp-card-title {
+    font-size: 42px;
+    line-height: 1.1;
+    padding-top: 14px;
+  }
+
+  .quick-help-cards .quickhelp-card p {
+    font-size: 17px;
+    line-height: 1.4;
+  }
+
+  .quick-help-cards .quickhelp-card .quickhelp-card-desc {
+    padding-top: 4px;
+  }
+
+  .quick-help-cards .quickhelp-card .button-wrapper {
+    margin-top: 40px;
+  }
+
+  .quick-help-cards .quickhelp-card .button-wrapper .button,
+  .quick-help-cards .quickhelp-card .quickhelp-card-btn.button {
+    min-width: 116px;
+    height: 48px;
+    border-radius: 7px;
+    padding: 0 22px;
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 600px) {

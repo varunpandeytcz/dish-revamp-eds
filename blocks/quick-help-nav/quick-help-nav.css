@@ -22,7 +22,10 @@ main > .section.quick-help-nav-container > div {
   gap: 28px;
   border-bottom: 1px solid #2a2f36;
   overflow-x: auto;
+  overflow-y: hidden;
   white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
   scrollbar-width: none;
 }
 
@@ -31,6 +34,7 @@ main > .section.quick-help-nav-container > div {
 }
 
 .quick-help-nav li {
+  flex: 0 0 auto;
   position: relative;
   margin: 0;
   padding: 0 10px 25px;
@@ -87,5 +91,23 @@ main > .section.quick-help-nav-container > div {
   .quick-help-nav ul {
     padding: 2rem 1rem 0rem 4rem;
     gap: 32px;
+  }
+}
+
+@media (max-width: 599px) {
+  .quick-help-nav ul {
+    padding: 10px 14px 0;
+    gap: 14px;
+  }
+
+  .quick-help-nav li {
+    padding: 0 8px 14px;
+  }
+
+  .quick-help-nav a,
+  .quick-help-nav .quick-help-nav-link,
+  .quick-help-nav .quick-help-nav-label {
+    font-size: 12px;
+    letter-spacing: 0.12px;
   }
 }
