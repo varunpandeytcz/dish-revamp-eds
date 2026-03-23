@@ -1,0 +1,130 @@
+.quick-help-cards-container {
+  background: #202020;
+  padding: 60px 0 256px 0;
+  margin: 0 !important;
+}
+
+.quick-help-cards {
+  width: 100%;
+  display: grid;
+  gap: 40px;
+}
+
+.quick-help-cards .quickhelp-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.quick-help-cards .quickhelp-card {
+  background: #333;
+  border: 1px solid #37393d;
+  border-radius: 6px;
+  padding: 20px;
+  min-height: 334px;
+  color: #f2f2f2;
+}
+
+.quick-help-cards .quickhelp-card > * {
+  margin: 0;
+}
+
+.quick-help-cards .quickhelp-card > * + * {
+  margin-top: 10px;
+}
+
+.quick-help-cards .quickhelp-card .quickhelp-card-desc {
+  color: #e4e4e4;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  padding-top: 9pt;
+}
+
+.quick-help-cards .quickhelp-card .quickhelp-card-pretext {
+  color: #e4e4e4;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.6;
+  padding-top: 12px;
+}
+
+.quick-help-cards .quickhelp-card .quickhelp-card-icon {
+  width: 60px;
+  height: auto;
+  object-fit: contain;
+  box-sizing: content-box;
+}
+
+.quick-help-cards .quickhelp-card .quickhelp-card-title {
+  margin: 0 0 8px;
+  color: #fff;
+  font-size: 31px;
+  line-height: 1.2;
+  font-weight: 700;
+  padding-top: 20px;
+}
+
+.quick-help-cards .quickhelp-card p {
+  margin: 0;
+  color: #e3e3e3;
+  font-size: 16px;
+  line-height: 1.45;
+  font-weight: 400;
+}
+
+.quick-help-cards .quickhelp-card a {
+  color: #f75a2a;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: 600;
+}
+
+.quick-help-cards .quickhelp-card .button-wrapper {
+  margin-top: 52px;
+}
+
+.quick-help-cards .quickhelp-card .button-wrapper .button,
+.quick-help-cards .quickhelp-card .quickhelp-card-btn.button {
+  margin: 0;
+  min-width: 124px;
+  height: 52px;
+  padding: 0 26px;
+  border: 0;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f75a2a;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.quick-help-cards .quickhelp-card .button-wrapper .button:hover,
+.quick-help-cards .quickhelp-card .quickhelp-card-btn.button:hover {
+  background: #ff6a3e;
+}
+
+@media (min-width: 600px) {
+  .quick-help-cards .quickhelp-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .quick-help-cards .quickhelp-card .quickhelp-card-title {
+    font-family: roboto, sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 900px) {
+  .quick-help-cards .quickhelp-row {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
