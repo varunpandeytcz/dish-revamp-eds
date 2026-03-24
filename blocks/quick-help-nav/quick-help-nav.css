@@ -107,7 +107,7 @@ main > .section.quick-help-nav-container > div {
   .quick-help-nav a,
   .quick-help-nav .quick-help-nav-link,
   .quick-help-nav .quick-help-nav-label {
-    font-size: 12px;
+    font-size: 16px;
     letter-spacing: 0.12px;
   }
 }

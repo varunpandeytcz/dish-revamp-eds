@@ -22,7 +22,7 @@ main > .section.quick-help-hero-container > div {
   text-align: center;
   background-image:
     linear-gradient(rgb(0 0 0 / 4%), rgb(0 0 0 / 4%)),
-    url('../../media/quick-help-bg.png');
+    url('../../media/quickhelpmob.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -45,6 +45,9 @@ main > .section.quick-help-hero-container > div {
     /* justify-content: flex-start; */
     text-align: left;
     padding: 24px 80px;
+    background-image:
+      linear-gradient(rgb(0 0 0 / 4%), rgb(0 0 0 / 4%)),
+      url('../../media/quick-help-bg.png');
   }
 
   .quick-help-hero .quick-help-hero-title {
