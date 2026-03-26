@@ -1,0 +1,44 @@
+.instant-recharge {
+  position: relative;
+  background: #fff;
+}
+
+.instant-recharge .instant-recharge-div {
+  width: 100%;
+  min-height: 64px;
+  margin: 0 auto;
+  padding: 18px 20px 14px;
+  display: flex;
+  align-items: center;
+}
+
+.instant-recharge .instant-recharge-div > div {
+  display: flex;
+  align-items: center;
+}
+
+.instant-recharge picture,
+.instant-recharge img {
+  display: block;
+}
+
+.instant-recharge img {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 649px) {
+  .instant-recharge .instant-recharge-div {
+    min-height: 56px;
+    padding: 14px 16px 12px;
+  }
+
+  .instant-recharge img {
+    width: 74px;
+  }
+
+  .instant-recharge::after {
+    height: 36px;
+  }
+}
