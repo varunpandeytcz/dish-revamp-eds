@@ -8,6 +8,18 @@ helix-importer-ui
 *.bak
 .idea
 
+# Claude Code internals
+.claude/
+
+# Local preview / scratch files
+instant-recharge-preview.html
+
+# Unused/experimental block folders (not referenced in DA)
+blocks/instant-recharge-account/
+blocks/instant-recharge-cashback/
+blocks/instant-recharge-plans/
+blocks/instant-recharge-payment/
+
 # Ensure these files are tracked
 !CLAUDE.md
 !AGENTS.md
