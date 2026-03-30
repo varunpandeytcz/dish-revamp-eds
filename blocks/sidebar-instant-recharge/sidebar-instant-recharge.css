@@ -1,0 +1,91 @@
+.sidebar-instant-recharge {
+  background: linear-gradient(135deg, #e91e8c 0%, #e84c1e 100%);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Decorative diagonal slash */
+.sidebar-instant-recharge::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  right: 30px;
+  width: 60px;
+  height: 160px;
+  background: rgb(255 255 255 / 15%);
+  transform: rotate(20deg);
+  pointer-events: none;
+}
+
+.sidebar-instant-recharge .recharge-inner {
+  padding: 24px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.sidebar-instant-recharge .recharge-label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 16px;
+}
+
+/* Amount input row */
+.sidebar-instant-recharge .recharge-input-wrap {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  border-bottom: 2px solid rgb(255 255 255 / 60%);
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+}
+
+.sidebar-instant-recharge .recharge-symbol {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+}
+
+.sidebar-instant-recharge .recharge-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  width: 100%;
+  line-height: 1;
+}
+
+.sidebar-instant-recharge .recharge-input::placeholder {
+  color: rgb(255 255 255 / 60%);
+}
+
+/* Hide number input arrows */
+.sidebar-instant-recharge .recharge-input::-webkit-outer-spin-button,
+.sidebar-instant-recharge .recharge-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+/* Recharge button */
+.sidebar-instant-recharge .recharge-btn {
+  width: 100%;
+  background: #fff;
+  color: #e84c1e;
+  border: none;
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.sidebar-instant-recharge .recharge-btn:hover {
+  opacity: 0.9;
+}

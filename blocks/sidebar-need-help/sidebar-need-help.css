@@ -1,0 +1,59 @@
+.sidebar-need-help {
+  background: #2a2a2a;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Heading */
+.sidebar-need-help .need-help-heading-row {
+  padding: 16px 20px 12px;
+}
+
+.sidebar-need-help .need-help-heading {
+  font-size: 15px;
+  font-weight: 700;
+  color: #e84c1e;
+  margin: 0;
+}
+
+/* Help items */
+.sidebar-need-help .need-help-item {
+  border-top: 1px solid rgb(255 255 255 / 8%);
+}
+
+.sidebar-need-help .need-help-item > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.sidebar-need-help .need-help-item > div:hover {
+  background: rgb(255 255 255 / 5%);
+}
+
+.sidebar-need-help .need-help-icon img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.sidebar-need-help .need-help-item-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.4;
+}
+
+@media (max-width: 899px) {
+  .sidebar-need-help .need-help-item > div {
+    flex-direction: row;
+    text-align: left;
+    gap: 14px;
+    justify-content: flex-start;
+  }
+}

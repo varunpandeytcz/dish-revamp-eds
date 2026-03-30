@@ -1,0 +1,158 @@
+/* ==========================================================
+   Section-level grid layout (shared across all blocks on /my-account)
+   ========================================================== */
+.offers-for-you-container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 16px;
+  background-color: #2a2a2a;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.offers-for-you-wrapper    { grid-column: 1; grid-row: 1; }
+.accordion-my-pack-wrapper { grid-column: 1; grid-row: 2; }
+.accordion-soa-wrapper     { grid-column: 1; grid-row: 3; }
+.accordion-my-invoices-wrapper    { grid-column: 1; grid-row: 4; }
+.accordion-issue-tracker-wrapper  { grid-column: 1; grid-row: 5; }
+.sidebar-instant-recharge-wrapper { grid-column: 2; grid-row: 1; }
+.sidebar-need-help-wrapper        { grid-column: 2; grid-row: 2 / span 4; }
+
+/* ==========================================================
+   Offers For You Block
+   ========================================================== */
+.offers-for-you {
+  background: transparent;
+}
+
+/* Heading row */
+.offers-for-you .offers-heading {
+  margin-bottom: 16px;
+}
+
+.offers-for-you .offers-heading > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.offers-for-you .offers-heading h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.offers-for-you .offers-icon img,
+.offers-for-you .offers-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+/* Cards grid */
+.offers-for-you .offers-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+/* Individual card */
+.offers-for-you .offer-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 10%);
+}
+
+.offers-for-you .offer-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.offers-for-you .offer-logo img {
+  height: 36px;
+  width: auto;
+  object-fit: contain;
+}
+
+.offers-for-you .offer-checkbox {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  cursor: pointer;
+  accent-color: #e84c1e;
+}
+
+.offers-for-you .offer-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.offers-for-you .offer-desc {
+  font-size: 12px;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.offers-for-you .offer-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+.offers-for-you .offer-price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.offers-for-you .offer-info {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #999;
+  display: flex;
+  align-items: center;
+}
+
+.offers-for-you .offer-info:hover {
+  color: #e84c1e;
+}
+
+/* Responsive */
+@media (max-width: 899px) {
+  .offers-for-you-container {
+    grid-template-columns: 1fr;
+  }
+
+  .offers-for-you-wrapper,
+  .accordion-my-pack-wrapper,
+  .accordion-soa-wrapper,
+  .accordion-my-invoices-wrapper,
+  .accordion-issue-tracker-wrapper,
+  .sidebar-instant-recharge-wrapper,
+  .sidebar-need-help-wrapper {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .offers-for-you .offers-cards {
+    grid-template-columns: 1fr;
+  }
+}
